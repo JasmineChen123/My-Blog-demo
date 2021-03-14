@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>详情页</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+    <link rel="stylesheet" href="./static/css/me.css">
+</head>
+<body>
+<!--导航-->
+    <nav class="ui inverted attached segment m-padded-tb-mini">
+        <div class="ui container">
+            <div class="ui inverted secondary stackable menu">
+                <h2 class="ui teal header item">Travel Diary</h2>
+                <a href="#" class="mini m-item item m-mobile-hide"><i class="home icon"></i>Home</a>
+                <a href="#" class="mini m-item item m-mobile-hide"><i class="idea icon"></i>Diary</a>
+                <a href="#" class="mini m-item item m-mobile-hide"><i class="calendar outline icon"></i>Future Plans</a>
+                <a href="#" class="mini m-item item m-mobile-hide"><i class="calendar outline icon"></i>Archive</a>
+                <a href="#" class="minim-item item m-mobile-hide"><i class="info icon"></i>About me</a>
+
+                <div class="right m-item item m-mobile-hide ">
+                    <div class="ui inverted transparent input">
+                        <input type="text" placeholder="Search for more">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="ui menu toggle black icon button m-right-top ">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+
+<!--中间内容-->
+    <div class="m-container-small m-padded-tb-large">
+        <div class="ui container">
+            <div class="ui top attached segment">
+                <!--头部-->
+                <div class="ui horizontal link list">
+                    <div class="item">
+                        <img src="https://picsum.photos/seed/picsum/15/15?image=1005" alt="" class="ui avatar image">
+                        <div class="content"><a href="#" class="header">Jasmine</a></div>
+                    </div>
+                    <div class="item">
+                        <i class="calendar icon"></i> 2021-02-27
+                    </div>
+                    <div class="item">
+                        <i class="eye icon"></i>222
+                    </div>
+                </div>
+            </div>
+            <div class="ui attached segment">
+<!--                图区域-->
+                <img src="https://picsum.photos/seed/picsum/800/400?image=1005" alt="" class="ui fluid rounded image">
+            </div>
+            <div class="ui attached segment">
+                <!--内容-->
+                <div class="ui right-aligned segment">
+                    <div class="ui orange basic label">原创</div>
+                </div>
+
+                <h2 class="ui center aligned header">Travel to Unknown</h2>
+                <!--文章内容-->
+                <div id="content" class="m-padded-lr-responsive m-padded-tb-large">
+                    <p>Willow
+                    The more that you say, the lese I know.
+                        Wherever you stray I follow.</p>
+                    <h2>1</h2>
+                    <p>Willow
+                    The more that you say, the lese I know.
+                        Wherever you stray I follow.</p>
+                    <h2>1</h2>
+                    <p>Willow
+                    The more that you say, the lese I know.
+                        Wherever you stray I follow.</p>
+                </div>
+                <!--标签-->
+                <div class="m-padded-lr-responsive">
+                    <div class="ui basic teal left pointing label">
+                        Evermore
+                    </div>
+                </div>
+                <!--赞赏-->
+                <div class="ui center aligned basic segment">
+                    <button id="payButton" class="ui orange basic circular button">Thumb up</button>
+                </div>
+                <div class="ui payQR flowing popup transition hidden">
+                    <div class="ui orange basic label">
+                        <div class="ui images" style="font-size: inherit !important;">
+                            <div class="image">
+                                <img src="./static/images/wechat.jpg" class="ui rounded bordered img" alt="" style="width:100px">
+                                <div>支付宝</div>
+                            </div>
+                            <div class="image">
+                                <img src="./static/images/wechat.jpg" class="ui rounded bordered img" alt="" style="width:100px">
+                                <div>微信</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui attached positive message">
+                <!--附加博客信息-->
+                <div class="ui middle aligned grid">
+                    <div class="eleven wide column">
+                        <ui class="list">
+                            <li>Author:Jasmin</li>
+                            <li>Release Time：2021.2.28</li>
+                            <li>Copyright: License </li>
+                            <li>if you want to contact me, please scan the QR</li>
+                        </ui>
+                    </div>
+                    <div class="five wide column">
+                        <img src="./static/images/wechat.jpg" alt="" class="ui right floated rounded bordered image" style="width:110px">
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui bottom attached segment">
+<!--                留言区域-->
+                <div class="ui teal segment">
+
+                    <div class="ui comments">
+                        <h3 class="ui dividing header">Comments</h3>
+                        <div class="comment">
+                            <a class="avatar">
+                                <img src="https://picsum.photos/seed/picsum/100/100?image=1005" alt="" class="ui avatar image">
+                            </a>
+                            <div class="content">
+                                <a class="author">Matt</a>
+                                <div class="metadata">
+                                    <span class="date">Today at 5:42PM</span>
+                                </div>
+                                <div class="text">
+                                    How artistic!
+                                </div>
+                                <div class="actions">
+                                    <a class="reply">Reply</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="comment">
+                            <a class="avatar">
+                                <img src="https://picsum.photos/seed/picsum/100/100?image=1005" alt="" class="ui avatar image">
+                            </a>
+                            <div class="content">
+                                <a class="author">Elliot Fu</a>
+                                <div class="metadata">
+                                    <span class="date">Yesterday at 12:30AM</span>
+                                </div>
+                                <div class="text">
+                                    <p>This has been very useful for my research. Thanks as well!</p>
+                                </div>
+                                <div class="actions">
+                                    <a class="reply">Reply</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--评论发布区-->
+                <div class="ui form">
+                    <div class="field">
+                        <textarea name="content" placeholder="please write your comments"></textarea>
+                    </div>
+                    <div class="fields">
+                        <div class="field m-mobile-wide m-margin-bottom-mini">
+                            <div class="ui left icon input">
+                                <i class="user icon"></i>
+                                <input type="text" name="nickname" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="field m-mobile-wide m-margin-bottom-mini">
+                            <div class="ui left icon input">
+                                <i class="mail icon"></i>
+                                <input type="text" name="email" placeholder="E-Mail">
+                            </div>
+                        </div>
+                        <div class="field m-mobile-wide m-margin-bottom-mini">
+                            <button class="ui teal button m-mobile-wide"><i class="edit icon"></i>发布</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<!--底部footer-->
+    <footer class="ui inverted vertical segment m-padded-tb-massive">
+
+        <div class="ui center aligned container">
+
+            <div class="ui inverted divided stackable grid">
+
+                <div class="three wide column">
+                    <div class="ui inverted link list">
+                        <div class="item">
+                            <img src="./static/images/wechat.jpg" class="ui rounded img" alt="" style="width:100px">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="three wide column">
+                    <h4 class="ui inverted header">Latest released articles</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">My old story</a>
+                        <a href="#" class="item">Secret Garden</a>
+                        <a href="#" class="item">The shower</a>
+                    </div>
+                </div>
+
+                <div class="three wide column">
+                    <h4 class="ui inverted header">To be continued</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">folklore</a>
+                        <a href="#" class="item">evermore</a>
+                        <a href="#" class="item">long story short</a>
+                    </div>
+                </div>
+
+                <div class="seven wide column">
+                    <h4 class="ui inverted header">Brief</h4>
+                    <p class="m-text-thin m-text-spaced m-opacity-tiny">This is the golden age of doing something good and right and well.</p>
+                </div>
+            </div>
+
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright@2020-2021 Designed by Jasmine Chen</p>
+        </div>
+
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+
+<script>
+    $('.menu.toggle').click(function(){
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+
+    $('#payButton').popup({
+        popup:$('.payQR.popup'),
+        on: 'click',
+        position: 'bottom center'
+    });
+</script>
+
+
+</body>
+</html>
